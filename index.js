@@ -1,5 +1,5 @@
 const express = require("express")
-const exphbds = ("express-handlebars")
+const exphbs = require("express-handlebars")
 
 const app = express()
 
