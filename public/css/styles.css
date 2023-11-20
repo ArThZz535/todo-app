@@ -22,7 +22,6 @@
     --text-color: #494c6b;
     --info-text-color: #9495a5;
 
-
 }
 
 
@@ -44,7 +43,6 @@ header {
     background-position: center;
 
     padding: 3rem 1.75rem;
-
 
 }
 
@@ -101,6 +99,7 @@ header form button {
     border: none;
     background: var(--button-color);
     color: #fff;
+
 }
 
 
@@ -159,6 +158,7 @@ main {
 
     color: var(--text-color);
     font-size: 0.75rem;
+
 }
 
 
@@ -181,13 +181,34 @@ main {
 
     color: var(--info-text-color);
     font-size: 0.75rem;
+
 }
 
 
 
-.informacoes a {
+.informacoes a, .botoes a {
 
     color: var(--info-text-color);
     text-decoration: none;
     
 }
+
+
+
+.botoes {
+
+    padding-block: 1rem;
+    background: var(--bg-tarefas);
+    border-radius: 0.3125rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+    font-size: 0.875rem;
+
+}
+
+
+
