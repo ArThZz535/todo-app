@@ -179,4 +179,15 @@ main {
     display: flex;
     justify-content: space-between;
 
+    color: var(--info-text-color);
+    font-size: 0.75rem;
+}
+
+
+
+.informacoes a {
+
+    color: var(--info-text-color);
+    text-decoration: none;
+    
 }
