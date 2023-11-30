@@ -1,6 +1,6 @@
+
+
 <main>
-
-
 
     <section class="tarefas">
         {{#each tarefas}}
@@ -12,7 +12,7 @@
                             <input type="checkbox" id="tarefa-{{this.id}}" checked onchange="descompletarTarefa({{this.id}})">
                             <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
                         </div>
-                    <button>
+                    <button onclick="excluirTarefa({{this.id}})">
                         <img src="/imagens/x-icon.png" alt="Ícone de X para excluir uma tarefa" width="12px 12px">
                     </button>
 
@@ -32,7 +32,7 @@
                 <a href="/completas" class="active">Completas</a>
             </div>
 
-            <a href="">Limpar Tarefas</a>
+            <a href="/limpartarefas">Limpar Tarefas</a>
 
         </div>
 
@@ -50,3 +50,4 @@
 
 
 </main>
+
