@@ -1,17 +1,20 @@
-
-
 <main>
 
+
+
     <section class="tarefas">
+
         {{#each tarefas}}
+
             <div class="tarefa">
 
                 <form action="">
 
-                         <div class="completa">
-                            <input type="checkbox" id="tarefa-{{this.id}}" checked onchange="descompletarTarefa({{this.id}})">
-                            <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
-                        </div>
+                    <div class="completa">
+                        <input type="checkbox" id="tarefa-{{this.id}}" checked onchange="descompletarTarefa({{this.id}})">
+                        <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
+                    </div>
+
                     <button onclick="excluirTarefa({{this.id}})">
                         <img src="/imagens/x-icon.png" alt="Ícone de X para excluir uma tarefa" width="12px 12px">
                     </button>
@@ -19,8 +22,8 @@
                 </form>
 
             </div>
-        {{/each}}
 
+        {{/each}}
 
         <div class="informacoes">
 
@@ -38,8 +41,6 @@
 
     </section>
 
-
-
     <section class="botoes">
 
         <a href="/">Todas</a>
@@ -47,6 +48,7 @@
         <a href="/completas" class="active">Completas</a>
 
     </section>
+
 
 
 </main>

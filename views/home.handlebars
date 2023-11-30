@@ -1,22 +1,30 @@
 {{#if tarefas}}
-
 <main>
 
+
+
     <section class="tarefas">
+
         {{#each tarefas}}
+
             <div class="tarefa">
 
                 <form action="">
+
                     {{#if this.completa}}
+
                         <div class="completa">
                             <input type="checkbox" id="tarefa-{{this.id}}" checked onchange="descompletarTarefa({{this.id}})">
                             <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
                         </div>
+
                     {{else}}
+
                         <div>
                             <input type="checkbox" id="tarefa-{{this.id}}" onchange="completarTarefa({{this.id}})">
                             <label for="tarefa-{{this.id}}">{{this.descricao}}</label>
                         </div>
+
                     {{/if}}
 
                     <button onclick="excluirTarefa({{this.id}})">
@@ -26,8 +34,8 @@
                 </form>
 
             </div>
-        {{/each}}
 
+        {{/each}}
 
         <div class="informacoes">
 
@@ -45,8 +53,6 @@
 
     </section>
 
-
-
     <section class="botoes">
 
         <a href="/" class="active">Todas</a>
@@ -56,6 +62,6 @@
     </section>
 
 
-</main>
 
+</main>
 {{/if}}

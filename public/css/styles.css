@@ -72,7 +72,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     padding: 3rem 1.75rem;
 
 }
@@ -83,6 +82,7 @@ header > div {
 
     max-width: 33.75rem;
     margin-inline: auto;    
+
 }
 
 
@@ -164,7 +164,6 @@ header form button {
 
 main {
 
-
     padding-inline: 1.75rem;
 
 }
@@ -199,9 +198,12 @@ main {
 }
 
 
+
 .completa label {
+
     text-decoration: line-through;
     color: var(--todo-complete-color);
+
 }
 
 
